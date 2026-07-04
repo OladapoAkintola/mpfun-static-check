@@ -1,0 +1,19 @@
+{
+  "app": "mpfun",
+  "latest_version": "3.0.0",
+  "min_supported_version": "3.0.0",
+  "released": "2026-07-02",
+  "channels": {
+    "free": {
+      "download_url": "/free/MPFUN-Free-Setup.exe",
+      "size_mb": 63.2
+    },
+    "pro": {
+      "download_url": "https://apps.microsoft.com/detail/9nx6f1k19svc",
+      "purchase_url": "https://apps.microsoft.com/detail/9nx6f1k19svc",
+      "size_mb": 120
+    }
+  },
+  "changelog": "Added crossfade transitions, settings page and fixed some bugs.",
+  "changelog_url": ""
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="nebula">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>MPFUN — a music player that plays like a mixer</title>
+<meta name="description" content="MPFUN is a Windows desktop music player with true crossfade and a 10 band EQ. Free and Pro editions." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="wordmark"><span class="dot"></span>MPFUN</div>
+    <nav class="site-nav">
+      <a href="#features">Features</a>
+      <a href="#editions">Editions</a>
+      <a href="#download">Download</a>
+      <div class="theme-switch" role="group" aria-label="Site theme">
+        <button data-swatch="nebula" class="active" aria-label="Nebula theme"></button>
+        <button data-swatch="royal" aria-label="Royal theme"></button>
+        <button data-swatch="solar" aria-label="Solar theme"></button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <p class="eyebrow">Windows desktop app</p>
+        <h1>Your music, mixed the way a DJ set flows.</h1>
+        <p class="lede">
+          MPFUN crossfades between tracks instead of cutting between them,
+          and shapes sound with a proper 10 band EQ. Built for people who
+          care how their library actually sounds.
+        </p>
+        <div class="cta-row">
+          <a href="#download" class="btn btn-primary">Download Free</a>
+          <a href="#editions" class="btn btn-secondary">Compare editions</a>
+        </div>
+      </div>
+
+      <div class="player-mock" aria-hidden="true">
+        <div class="viz-frame">
+          <canvas id="visualizer"></canvas>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Under the hood</p>
+        <h2>Playback details most players skip</h2>
+        <p>Three pieces of MPFUN that change how listening actually feels, not just how the window looks.</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="icon"></div>
+          <h3>True dual deck crossfade</h3>
+          <p>Two independent player backends hand off to each other, so transitions between songs fade instead of jump cut.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon"></div>
+          <h3>10 band EQ, 10 presets</h3>
+          <p>Shape the full frequency range from the AudioEffectsBar, or drop into a preset built for a specific genre or room.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon"></div>
+          <h3>Themes that actually change the app</h3>
+          <p>Nine color palettes, including a few seasonal ones that switch on by themselves around certain dates. Pick your own or let the calendar decide.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="editions">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Pick your edition</p>
+        <h2>Free covers real listening. Pro covers tuning it.</h2>
+      </div>
+      <div class="edition-grid">
+        <div class="edition-card">
+          <h3>Free</h3>
+          <p class="price">$0</p>
+          <ul>
+
+            <li>Library and playlist management</li>
+
+            <li>Three built in themes</li>
+          </ul>
+          <a href="https://oladapo-akintola.itch.io/mpfun-play-it-your-way" class="btn btn-secondary btn-small">Get Free</a>
+        </div>
+        <div class="edition-card pro">
+          <h3>Pro</h3>
+          <p class="price">One time <span>purchase</span></p>
+          <ul>
+            <li>Everything in Free</li>
+            <li>Full 10 band EQ with presets</li>
+            <li>All seasonal and custom themes</li>
+            <li>Priority support for bug reports</li>
+          </ul>
+          <a href="https://apps.microsoft.com/detail/9nx6f1k19svc" class="btn btn-primary btn-small">Get Pro</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="download">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Get MPFUN</p>
+        <h2>Available on the Microsoft Store</h2>
+      </div>
+      <div class="download-panel">
+        <div>
+          <div class="version-tag">Latest release <strong id="version-number">checking…</strong></div>
+          <p id="changelog-line"></p>
+        </div>
+        <div class="cta-row">
+          <a id="download-free" class="btn btn-secondary" href="https://oladapo-akintola.itch.io/mpfun-play-it-your-way">Download Free</a>
+          <a id="download-pro" class="btn btn-primary" href="https://apps.microsoft.com/detail/9nx6f1k19svc">Get Pro</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>MPFUN. Built with PySide6.</p>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
